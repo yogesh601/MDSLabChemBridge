@@ -60,13 +60,13 @@ or
 #Install from GitHub
 remotes::install_github("https://github.com/yogesh601/MDSLabChemBridge")
 
-******** Thank You***********
+# ******** Thank You***********
 
-****** Have fun with the Package *******************
+# ****** Have fun with the Package *******************
 
 
 
-# Library Required #.............
+# Library Required #
 
   library(reticulate)
   library(shiny)
