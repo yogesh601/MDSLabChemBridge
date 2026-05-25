@@ -3,6 +3,23 @@
 
 # * FOLLOW THE INSTRUCTIONS FOR INSTALLATION *******
 
+## Checks for preinstallation ***************
+
+Step1: To run the application in virtualenv you need to create virtualenv
+       1. Force create the environment
+	   ```(r)
+	   reticulate::virtualenv_create("r-rectivulate")
+	   ```
+	   2. Verify it now exists:
+
+	    ```(r)
+		reticulate::virtualenv_list()   #ensure "r-reticulate" appears in the printed list
+		```
+	   3. Activate and use it:
+	    ```(r)
+		reticulate::use_virtualenv("r-reticulate", required = TRUE)
+		```
+
 # ******** Installation ************
 
 # Download the package zip file #
