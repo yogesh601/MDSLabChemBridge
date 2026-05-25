@@ -7,25 +7,20 @@
 
 Step 1: To run the application in virtualenv, you need to create a virtualenv
       
-	   1. Force create the environment
-	   
-	   ```(r)
-	   reticulate::virtualenv_create("r-rectivulate")
-	   ```
-	   
-	   2. Verify it now exists:
+1. Force create the environment 
+```(r)
+reticulate::virtualenv_create("r-rectivulate")
+```   
+2. Verify it now exists:
+```(r)
+reticulate::virtualenv_list()   #ensure "r-reticulate" appears in the printed list
+```
+3. Activate and use it:
+```(r)
+reticulate::use_virtualenv("r-reticulate", required = TRUE)
+```
 
-	    ```(r)
-		reticulate::virtualenv_list()   #ensure "r-reticulate" appears in the printed list
-		```
-		
-	   3. Activate and use it:
-	   
-	    ```(r)
-		reticulate::use_virtualenv("r-reticulate", required = TRUE)
-		```
-
-# ******** Installation ************
+# ******** Installation ********#
 
 # Download the package zip file #
 
