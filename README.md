@@ -3,7 +3,7 @@
 
 # * FOLLOW THE INSTRUCTIONS FOR INSTALLATION *******
 
-## Checks for preinstallation #***************
+# Checks for preinstallation #
 
 Step 1: To run the application in virtualenv, you need to create a virtualenv
       
