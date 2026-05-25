@@ -3,10 +3,11 @@
 
 # * FOLLOW THE INSTRUCTIONS FOR INSTALLATION *******
 
-## Checks for preinstallation ***************
+## Checks for preinstallation #***************
 
-Step1: To run the application in virtualenv you need to create virtualenv
-       1. Force create the environment
+Step 1: To run the application in virtualenv, you need to create a virtualenv
+      
+	   1. Force create the environment
 	   ```(r)
 	   reticulate::virtualenv_create("r-rectivulate")
 	   ```
