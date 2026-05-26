@@ -9,7 +9,7 @@ Step 1: To run the application in virtualenv, you need to create a virtualenv
       
 1. Force create the environment 
 ```(r)
-reticulate::virtualenv_create("r-rectivulate")
+reticulate::virtualenv_create("r-reticulate")
 ```   
 2. Verify it now exists:
 ```(r)
