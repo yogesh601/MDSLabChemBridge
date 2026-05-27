@@ -51,7 +51,7 @@ if ("MDSLabChemBridge" %in% installed.packages()) {
 7. Install from the SOURCE (not the library)
 # This command converts your source files into a valid R library
 ```(r)
-devtools::install("C:/MDSLabChemBridge", upgrade = "never", force = TRUE)     # for example, if your package unzip folder is in the C drive "C:/MDSLabChemBridge"
+devtools::install("C:/MDSLabChemBridge", upgrade = FALSE, force = TRUE)     # for example, if your package unzip folder is in the C drive "C:/MDSLabChemBridge"
 ```
 
 * Restart R session
