@@ -53,7 +53,7 @@ if ("MDSLabChemBridge" %in% installed.packages()) {
 ```(r)
 devtools::install("C:/MDSLabChemBridge", upgrade = FALSE, force = TRUE)     
 ```
-# for example, if your package unzip folder is in the C drive "C:/MDSLabChemBridge"
+$ for example, if your package unzip folder is in the C drive "C:/MDSLabChemBridge"
 
 * Restart R session
 
