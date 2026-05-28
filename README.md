@@ -20,7 +20,7 @@ reticulate::virtualenv_list()   #ensure "r-reticulate" appears in the printed li
 reticulate::use_virtualenv("r-reticulate", required = TRUE)
 ```
 
-# ******** Installation ********#
+# ******** Installation ********
 
 # Download the package zip file #
 
