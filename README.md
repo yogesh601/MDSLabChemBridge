@@ -3,7 +3,24 @@
 
 # * FOLLOW THE INSTRUCTIONS FOR INSTALLATION *******
 
-# Checks for preinstallation 
+# Checks for preinstallation
+
+## Check for Python installation
+
+MDSLabChemBridge requires Python for RDKit, PaDEL, and Mordred descriptor calculations through the `reticulate` package.
+
+Before installing the Python environment, make sure that a 64-bit Python installation is available on your system.
+
+For Windows, Python can be downloaded from:
+
+https://www.python.org/downloads/windows/
+
+During Python installation, enable **"Add Python to PATH"**.
+
+After installation, restart R/RStudio and verify Python from R:
+
+```r
+system2("python", "--version")
 
 Step 1: To run the application in virtualenv, you need to create a virtualenv
       
