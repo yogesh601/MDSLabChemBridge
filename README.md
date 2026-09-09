@@ -91,7 +91,7 @@ install.packages("C:/Users/YourName/Downloads/MDSLabChemBridge.zip",
 
 # Python Library #
 ```(r)
-numpy==1.26.4
+numpy==1.26.4   #numpy version should be less than 2 numpy<2
 pandas
 rdkit
 padelpy
