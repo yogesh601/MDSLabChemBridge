@@ -19,8 +19,9 @@ During Python installation, enable **"Add Python to PATH"**.
 
 After installation, restart R/RStudio and verify Python from R:
 
-```r
+
 system2("python", "--version")
+```r
 
 Step 1: To run the application in virtualenv, you need to create a virtualenv
       
