@@ -88,6 +88,15 @@ install.packages("C:/Users/YourName/Downloads/MDSLabChemBridge.zip",
 
 
 # Library Required #
+
+# Python Library #
+```(r)
+numpy==1.26.4
+pandas
+rdkit
+padelpy
+mordred
+```
 ```(r)
   library(reticulate)
   library(shiny)
@@ -102,4 +111,5 @@ install.packages("C:/Users/YourName/Downloads/MDSLabChemBridge.zip",
   library(uwot)
   library(caret)
 ```
+
 __________________________________________________________________
