@@ -260,6 +260,12 @@ launch_MDSLabChemBridge()
 
 The Shiny application should open in your default browser or R.
 
+## Delete any old, broken versions first if you tried installing in the wrong way and restart the installation again.
+```r
+if ("MDSLabChemBridge" %in% installed.packages()) {
+  remove.packages("MDSLabChemBridge")
+}
+```
 ---
 
 # 3. Linux Installation
