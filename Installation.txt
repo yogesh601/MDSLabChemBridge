@@ -22,6 +22,26 @@ This guide provides fresh-installation instructions for **Windows and Linux** us
 
 ---
 
+### Windows Security / Antivirus
+
+During installation, Windows Security or third-party antivirus software may occasionally block R/Python components, downloaded files, or package installation scripts.
+
+If this occurs:
+
+1. Open **Windows Security → Virus & threat protection → Protection history** and check whether a file was blocked or quarantined.
+2. Verify that the blocked file originates from an official source such as the R project, Python, RStudio/Posit, or the official MDSLabChemBridge GitHub repository.
+3. If the file is confirmed to be legitimate, allow or restore the file according to your organization's security policy.
+4. If necessary, real-time protection may be temporarily paused during the specific installation step. **Turn it back on immediately after the installation is completed.**
+5. Do **not** permanently disable Windows Security, Windows Defender, or other antivirus protection.
+6. On institutionally managed computers, contact your IT administrator if security policies prevent installation.
+
+> **Security note:** Do not disable antivirus protection permanently. Always verify the source of downloaded files before allowing blocked files or changing security settings.
+
+The official MDSLabChemBridge repository is:
+
+https://github.com/yogesh601/MDSLabChemBridge
+
+
 # 2. Windows Installation
 
 ## 2.1 Install Python
