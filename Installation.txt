@@ -101,6 +101,18 @@ https://github.com/yogesh601/MDSLabChemBridge
 
 Select **Code → Download ZIP**, then extract the repository.
 
+**Check there should be these files**
+
+	. R (folder)
+	. DESCRIPTION (file)
+	. MDSLabChemBridge (File)
+	. NAMESPACE
+  
+**Inside R folder check these files**
+
+	. .Rhistory (file)
+	. app_function.R (file)
+
 For example:
 
 ```text
