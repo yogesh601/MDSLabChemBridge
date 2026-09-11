@@ -105,7 +105,7 @@ https://github.com/yogesh601/MDSLabChemBridge
 
 Select **Code → Download ZIP**, then extract the repository.
 
-**Check there should be these files**
+**Check there should be these files in MDSLabChemBridge Folder**
 
 	. R (folder)
 	. DESCRIPTION (file)
