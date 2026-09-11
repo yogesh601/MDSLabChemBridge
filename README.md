@@ -134,6 +134,7 @@ Open RStudio and run:
 ```r
 install.packages(c(
   "reticulate",
+  "devtools",
   "shiny",
   "shinyWidgets",
   "rcdk",
@@ -163,6 +164,7 @@ library(shinycssloaders)
 library(plotly)
 library(uwot)
 library(caret)
+library(devtools)
 ```
 
 If these commands run without errors, the required R packages are installed.
