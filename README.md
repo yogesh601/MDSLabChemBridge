@@ -376,6 +376,7 @@ Open RStudio and run:
 ```r
 install.packages(c(
   "reticulate",
+  "devtools",
   "shiny",
   "shinyWidgets",
   "rcdk",
@@ -405,6 +406,7 @@ library(shinycssloaders)
 library(plotly)
 library(uwot)
 library(caret)
+library(devtools)
 ```
 
 ## 3.6 Create the Python Virtual Environment
