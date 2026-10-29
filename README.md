@@ -789,13 +789,23 @@ If descriptor calculation fails on Ubuntu or another Linux distribution, first i
 
 Run the following commands in the R session used to launch the application:
 
+
+# MDSLabChemBridge diagnostics for Linux
+```r
+library(rcdk)
+library(rJava)
+library(reticulate)
+```
+# Check R and installed packages
+sessionInfo()
+
 ```r
 sessionInfo()
 
 packageVersion("rcdk")
 packageVersion("rJava")
 packageVersion("reticulate")
-
+# Check the Python interpreter selected by Reticulate
 reticulate::py_config()
 ```
 
