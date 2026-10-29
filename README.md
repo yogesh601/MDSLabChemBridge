@@ -13,11 +13,11 @@ To help users install, configure, and run **MDSLabChemBridge on Windows**, a ste
 The video tutorial provides guidance on the Windows installation workflow. Users are encouraged to follow the video alongside the written installation instructions available in this repository.
 
 **Before starting:**
-- Review the Windows installation instructions in [`INSTALLATION.txt`](INSTALLATION.txt).
+- Review the Windows installation instructions in [`Installation.txt`](INSTALLATION.txt).
 - Ensure that the required software, R packages, Python environment, and dependencies are installed as described in the documentation.
 - Follow the installation steps carefully and consult the troubleshooting section if you encounter any errors.
 
-**For Linux users:** Please refer to the Linux installation instructions in [`INSTALLATION.txt`](INSTALLATION.txt).
+**For Linux users:** Please refer to the Linux installation instructions in [`Installation.txt`](INSTALLATION.txt).
 
 For further information, documentation, and updates, visit the [MDSLabChemBridge GitHub repository](https://github.com/yogesh601/MDSLabChemBridge).
 
