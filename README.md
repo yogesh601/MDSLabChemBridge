@@ -173,7 +173,23 @@ library(devtools)
 
 If these commands run without errors, the required R packages are installed.
 
-## 2.8 Create the Python Virtual Environment
+
+### 2.8 (a) Configure the Virtual Environment Location (Optional)
+
+On some Windows systems, the default Reticulate virtual-environment directory may be located inside a OneDrive-synchronized folder. If this causes installation or environment initialization problems, users can specify a local directory before creating the virtual environment.
+
+```r
+Sys.setenv(
+  RETICULATE_VIRTUALENV_ROOT = "C:/MDSLabChemBridge_venvs"
+)
+```
+
+Replace the example directory with a suitable local path. Set this variable before creating the `r-reticulate` environment. Restart RStudio first if Reticulate has already initialized in the current R session.
+
+The directory will be used as the root for Reticulate virtual environments created in that session.
+
+
+## 2.8 (b) Create the Python Virtual Environment
 
 MDSLabChemBridge uses a dedicated Python virtual environment named `r-reticulate`.
 
@@ -204,6 +220,35 @@ reticulate::use_virtualenv(
 )
 ```
 
+
+### Troubleshooting: Python Fails to Start
+
+If Python fails to initialize, verify that the selected Python executable exists and is compatible with the application. Reticulate may be configured to use a different Python installation than the one intended for MDSLabChemBridge.
+
+To explicitly select a Python executable, set `RETICULATE_PYTHON` before Python initializes:
+
+```r
+Sys.setenv(
+  RETICULATE_PYTHON =
+    "C:/Path/to/Python/python.exe"
+)
+```
+
+Replace the example path with the actual path to the intended Python executable. If the `r-reticulate` environment has already been created, the path can be obtained using:
+
+```r
+reticulate::virtualenv_python("r-reticulate")
+```
+
+Restart RStudio before applying the setting if Python has already initialized in the current session. Verify the selected interpreter using:
+
+```r
+reticulate::py_config()
+```
+
+The reported Python path should correspond to the environment intended for MDSLabChemBridge.
+
+
 ## 2.10 Install NumPy 1.26.4
 
 The current application requires NumPy **1.26.4**. Do not use NumPy 2.x for this environment.
@@ -226,6 +271,37 @@ system2(
   )
 )
 ```
+
+### Install the Python Dependency `openpyxl`
+
+MDSLabChemBridge may require `openpyxl` for operations involving Excel files. Install it in the same Python virtual environment used by the application.
+
+```r
+python_exe <- reticulate::virtualenv_python(
+  "r-reticulate"
+)
+
+system2(
+  python_exe,
+  c("-m", "pip", "install", "openpyxl")
+)
+```
+
+Verify that the package can be imported:
+
+```r
+reticulate::use_virtualenv(
+  "r-reticulate",
+  required = TRUE
+)
+
+reticulate::py_run_string(
+  "import openpyxl; print(openpyxl.__version__)"
+)
+```
+
+If the import succeeds and the version is printed, `openpyxl` is available in the selected environment.
+
 
 ## 2.11 Verify NumPy
 
@@ -706,6 +782,26 @@ launch_MDSLabChemBridge()
 - [ ] Run the analysis
 
 ---
+
+### Troubleshooting: Descriptor Calculation Errors on Linux
+
+If descriptor calculation fails on Ubuntu or another Linux distribution, first identify which calculation engine is responsible. MDSLabChemBridge integrates the CDK engine through `rcdk` and Python-based engines through Reticulate.
+
+Run the following commands in the R session used to launch the application:
+
+```r
+sessionInfo()
+
+packageVersion("rcdk")
+packageVersion("rJava")
+packageVersion("reticulate")
+
+reticulate::py_config()
+```
+
+If the error persists, record the complete R console error and traceback, together with the selected descriptor engine. This information is needed to distinguish an R/Java integration problem from a Python environment or package compatibility issue.
+
+For Java-related failures, verify the Java installation and R's Java configuration. For Python-related failures, verify that Reticulate selects the intended Python environment and that the required libraries can be imported.
 
 # 9. Support
 
