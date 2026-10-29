@@ -3,14 +3,24 @@
 
 MDSLabChemBridge AI-Tool is an R/Shiny-based cheminformatics application for molecular descriptor generation, feature engineering, dimensionality reduction, clustering, and chemical-space visualization.
 
-### Video Guide for Installation 
 
-Youtube link: <a href="https://youtu.be/fPNwr8c--18?si=FSGtel6kNaK9LzFR"
-   target="_blank"
-   rel="noopener noreferrer">
-  ▶ Watch the MDSLabChemBridge tutorial on YouTube
-</a> 
-**for Windows installation**
+### Video Guide for Installation and Setup
+
+To help users install, configure, and run **MDSLabChemBridge on Windows**, a step-by-step video tutorial is available on YouTube.
+
+**▶ For Windows Installation:** [Watch the MDSLabChemBridge Installation Tutorial](https://youtu.be/fPNwr8c--18?si=FSGtel6kNaK9LzFR)
+
+The video tutorial provides guidance on the Windows installation workflow. Users are encouraged to follow the video alongside the written installation instructions available in this repository.
+
+**Before starting:**
+- Review the Windows installation instructions in [`INSTALLATION.txt`](INSTALLATION.txt).
+- Ensure that the required software, R packages, Python environment, and dependencies are installed as described in the documentation.
+- Follow the installation steps carefully and consult the troubleshooting section if you encounter any errors.
+
+**For Linux users:** Please refer to the Linux installation instructions in [`INSTALLATION.txt`](INSTALLATION.txt).
+
+For further information, documentation, and updates, visit the [MDSLabChemBridge GitHub repository](https://github.com/yogesh601/MDSLabChemBridge).
+
 
 This guide provides fresh-installation instructions for **Windows and Linux** users.
 
