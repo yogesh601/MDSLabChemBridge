@@ -8,8 +8,9 @@ MDSLabChemBridge AI-Tool is an R/Shiny-based cheminformatics application for mol
 Youtube link: <a href="https://youtu.be/fPNwr8c--18?si=FSGtel6kNaK9LzFR"
    target="_blank"
    rel="noopener noreferrer">
-   Watch the YouTube video
-</a>    **for Windows installation**
+  ▶ Watch the MDSLabChemBridge tutorial on YouTube
+</a> 
+**for Windows installation**
 
 This guide provides fresh-installation instructions for **Windows and Linux** users.
 
