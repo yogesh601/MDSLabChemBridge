@@ -3,6 +3,11 @@
 
 MDSLabChemBridge AI-Tool is an R/Shiny-based cheminformatics application for molecular descriptor generation, feature engineering, dimensionality reduction, clustering, and chemical-space visualization.
 
+## 📚 Descriptor Glossary
+
+The descriptor glossary and accompanying table are available as a standalone Excel file. Users can download and review the descriptor information without installing MDSLabChemBridge.
+
+📥 [Download the Descriptor Glossary and Table (Excel)](MDSLab_Glossary_and_Table2_2026-10-28.xlsx)
 
 ### Video Guide for Installation and Setup
 
