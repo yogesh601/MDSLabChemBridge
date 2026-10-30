@@ -803,20 +803,20 @@ launch_MDSLabChemBridge()
 
 ---
 
-### Troubleshooting: Descriptor Calculation Errors on Linux
+# Troubleshooting: Descriptor Calculation Errors on Linux
 
 If descriptor calculation fails on Ubuntu or another Linux distribution, first identify which calculation engine is responsible. MDSLabChemBridge integrates the CDK engine through `rcdk` and Python-based engines through Reticulate.
 
 Run the following commands in the R session used to launch the application:
 
 
-# MDSLabChemBridge diagnostics for Linux
+## MDSLabChemBridge diagnostics for Linux
 ```r
 library(rcdk)
 library(rJava)
 library(reticulate)
 ```
-# Check R and installed packages
+## Check R and installed packages
 sessionInfo()
 
 ```r
